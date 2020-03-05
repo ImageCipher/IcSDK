@@ -10,6 +10,9 @@ public abstract class IcEncrypter implements AutoCloseable {
     protected String fileName;
     protected BufferedImage image;
 
+    public IcEncrypter() {
+    }
+
     public abstract void encrypt(String text);
 
     public String getFileName() {
